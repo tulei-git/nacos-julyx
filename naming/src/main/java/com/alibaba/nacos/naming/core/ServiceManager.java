@@ -547,7 +547,7 @@ public class ServiceManager implements RecordListener<Service> {
 
             Instances instances = new Instances();
             instances.setInstanceList(instanceList);
-
+            // 数据同步
             consistencyService.put(key, instances);
         }
     }
